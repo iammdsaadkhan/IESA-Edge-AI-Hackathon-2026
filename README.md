@@ -161,15 +161,13 @@ TRAINING CONFIGURATION
 Epochs: 30
 Batch Size: 16
 Optimizer: AdamW
-Learning Rate: 0.001
+Learning Rate: 0.1176
 Scheduler: ReduceLROnPlateau
 Loss: Class-weighted CrossEntropyLoss
 Training Device: CPU
 Framework: PyTorch 2.1
-Training Time: ~25–30 minutes
+Training Time: ~30-60 minutes
 
-Train Model:
-python train_model.py
 
 --------------------------------------------------
 EXPORT TO ONNX
@@ -178,7 +176,7 @@ EXPORT TO ONNX
 python export_model.py
 
 Output:
-SEMNet_Final_1_5M.onnx
+SEMNetV2_wafer_defect.onnx
 
 --------------------------------------------------
 EDGE DEPLOYMENT
@@ -189,33 +187,16 @@ Framework: NXP eIQ Toolkit
 Model Format: ONNX
 Quantization: INT8-ready
 
---------------------------------------------------
-ONNX RUNTIME INFERENCE (PYTHON)
---------------------------------------------------
-
-import onnxruntime as ort
-import numpy as np
-from PIL import Image
-
-session = ort.InferenceSession("SEMNet_Final_1_5M.onnx")
-
-img = Image.open("wafer_image.png").convert("L").resize((224, 224))
-img = np.array(img, dtype=np.float32)
-img = (img / 255.0 - 0.5) / 0.5
-img = img.reshape(1, 1, 224, 224)
-
-outputs = session.run(None, {"input": img})
-predicted_class = outputs[0].argmax()
 
 --------------------------------------------------
 DATASET INFORMATION
 --------------------------------------------------
 
-Dataset Type: AI-generated + curated
+Dataset Type: LLM-generated + curated
 Image Modality: Grayscale
 Labeling Method: Manual class assignment
-Purpose: Hackathon research & prototyping
-License: Educational / Competition use
+Purpose: Hackathon research
+License: Educational use
 
 No proprietary or restricted industrial data was used.
 
