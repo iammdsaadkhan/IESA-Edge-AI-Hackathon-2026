@@ -77,6 +77,7 @@ Mal-Formed Vias    0.9362      88.00%    0.9072     100
 Other              0.9726      97.26%    0.9726     73
 Oxide              0.9485      99.23%    0.9699     130
 Pattern Collapse   0.8462      100.00%   0.9167     55
+<img width="836" height="722" alt="confusion_matrix" src="https://github.com/user-attachments/assets/e5cc7dc9-55d4-40b1-af97-2639ecdfd3fb" />
 
 --------------------------------------------------
 ACCURACY SUMMARY
