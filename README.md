@@ -13,6 +13,19 @@
 * **INT8 Model Size (Estimated):** ~1.41 MB
 
 ---
+
+## 📊 Results & Visualizations
+
+### Training Performance
+![Training History](reports/training_history.png)
+*Training and validation accuracy/loss progression over 40 epochs*
+
+### Confusion Matrix
+![Confusion Matrix](reports/confusion_matrix.png)
+*Classification performance across all 8 defect types*
+
+---
+
 ## Dataset
 
 Due to GitHub file size limitations, the dataset is **not included** in this repository.
@@ -23,9 +36,7 @@ Due to GitHub file size limitations, the dataset is **not included** in this rep
 
 After downloading, place the dataset in the project root as follows:
 
-
 ## Repository Structure
-
 ```text
 iesa/
 ├── dataset/
@@ -49,9 +60,10 @@ iesa/
 ├── train_model.py
 ├── export_model.py
 └── README.md
+```
 
 --------------------------------------------------
-DEFECT CLASSES (8)
+## DEFECT CLASSES (8)
 --------------------------------------------------
 
 1. Bridge
@@ -64,39 +76,38 @@ DEFECT CLASSES (8)
 8. Pattern Collapse
 
 --------------------------------------------------
-CLASSIFICATION REPORT
+## CLASSIFICATION REPORT
 --------------------------------------------------
 
-Class              Precision   Recall    F1-Score   Support
-------------------------------------------------------------
-Bridge             1.0000      92.00%    0.9583     50
-Clean              0.4762      41.67%    0.4444     48
-CMP Scratch        0.9000      90.00%    0.9000     50
-Crack              0.9500      95.00%    0.9500     80
-Mal-Formed Vias    0.9362      88.00%    0.9072     100
-Other              0.9726      97.26%    0.9726     73
-Oxide              0.9485      99.23%    0.9699     130
-Pattern Collapse   0.8462      100.00%   0.9167     55
-<img width="836" height="722" alt="confusion_matrix" src="https://github.com/user-attachments/assets/e5cc7dc9-55d4-40b1-af97-2639ecdfd3fb" />
+| Class              | Precision | Recall  | F1-Score | Support |
+|--------------------|-----------|---------|----------|---------|
+| Bridge             | 100.00%   | 92.00%  | 0.9583   | 50      |
+| Clean              | 47.62%    | 41.67%  | 0.4444   | 48      |
+| CMP Scratch        | 90.00%    | 90.00%  | 0.9000   | 50      |
+| Crack              | 95.00%    | 95.00%  | 0.9500   | 80      |
+| Mal-Formed Vias    | 93.62%    | 88.00%  | 0.9072   | 100     |
+| Other              | 97.26%    | 97.26%  | 0.9726   | 73      |
+| Oxide              | 94.85%    | 99.23%  | 0.9699   | 130     |
+| Pattern Collapse   | 84.62%    | 100.00% | 0.9167   | 55      |
 
 --------------------------------------------------
-ACCURACY SUMMARY
+## ACCURACY SUMMARY
 --------------------------------------------------
 
-Overall Accuracy: 92.44%
-Macro Avg F1: 0.8774
-Weighted Avg F1: 0.9018
-Total Samples: ~1200
+- **Overall Accuracy:** 92.44%
+- **Macro Avg F1:** 0.8774
+- **Weighted Avg F1:** 0.9018
+- **Total Samples:** ~1200
 
 --------------------------------------------------
-MODEL ARCHITECTURE
+## MODEL ARCHITECTURE
 --------------------------------------------------
 
-Model Name: phase1Model.ipynb
+**Model Name:** phase1Model.ipynb
 
 A custom edge-optimized convolutional neural network built for real-time semiconductor wafer inspection.
 
-Key Features:
+**Key Features:**
 - Batch normalization applied after each convolution layer
 - Hardware-efficient ReLU activation functions
 - Max pooling layers for progressive spatial reduction
@@ -104,37 +115,39 @@ Key Features:
 - Designed to support INT8 quantization for efficient deployment on edge hardware
 
 --------------------------------------------------
-MODEL STATISTICS
+## MODEL STATISTICS
 --------------------------------------------------
 
-Total Parameters: 1,475,912
-Trainable Parameters: 1,475,912
-FP32 Model Size: 5.63 MB
-INT8 Model Size: ~1.41 MB
-ONNX Compatible: Yes
+- **Total Parameters:** 1,475,912
+- **Trainable Parameters:** 1,475,912
+- **FP32 Model Size:** 5.63 MB
+- **INT8 Model Size:** ~1.41 MB
+- **ONNX Compatible:** Yes
 
 --------------------------------------------------
-PERFORMANCE METRICS (VALIDATION)
+## PERFORMANCE METRICS (VALIDATION)
 --------------------------------------------------
 
-Accuracy: 92.27%
-Macro Precision: 90.25%
-Macro Recall: 90.37%
-Macro F1 Score: 90.16%
+- **Accuracy:** 92.27%
+- **Macro Precision:** 90.25%
+- **Macro Recall:** 90.37%
+- **Macro F1 Score:** 90.16%
 
 Class-weighted CrossEntropyLoss used to handle class imbalance.
 
 --------------------------------------------------
-QUICK START
+## QUICK START
 --------------------------------------------------
 
-Install Dependencies:
+### Install Dependencies:
+```bash
 pip install torch torchvision onnx onnxruntime scikit-learn matplotlib pillow
+```
 
 --------------------------------------------------
-DATASET STRUCTURE
+## DATASET STRUCTURE
 --------------------------------------------------
-
+```
 Train/
 ├── Bridge/
 ├── Clean/
@@ -147,67 +160,77 @@ Train/
 
 Validation/
 └── Same structure as Train/
+```
 
-Images:
+**Images:**
 - Grayscale
 - Resized during preprocessing
 - Augmented during training
 
 --------------------------------------------------
-TRAINING CONFIGURATION
+## TRAINING CONFIGURATION
 --------------------------------------------------
 
-Epochs: 30
-Batch Size: 16
-Optimizer: AdamW
-Learning Rate: 0.1176
-Scheduler: ReduceLROnPlateau
-Loss: Class-weighted CrossEntropyLoss
-Training Device: CPU
-Framework: PyTorch 2.1
-Training Time: ~30-60 minutes
-
+- **Epochs:** 30
+- **Batch Size:** 16
+- **Optimizer:** AdamW
+- **Learning Rate:** 0.1176
+- **Scheduler:** ReduceLROnPlateau
+- **Loss:** Class-weighted CrossEntropyLoss
+- **Training Device:** CPU
+- **Framework:** PyTorch 2.1
+- **Training Time:** ~30-60 minutes
 
 --------------------------------------------------
-EXPORT TO ONNX
+## EXPORT TO ONNX
 --------------------------------------------------
-
+```bash
 python export_model.py
+```
 
-Output:
-SEMNetV2_wafer_defect.onnx
-
---------------------------------------------------
-EDGE DEPLOYMENT
---------------------------------------------------
-
-Target Hardware: NXP i.MX RT Series
-Framework: NXP eIQ Toolkit
-Model Format: ONNX
-Quantization: INT8-ready
-
+**Output:** `SEMNetV2_wafer_defect.onnx`
 
 --------------------------------------------------
-DATASET INFORMATION
+## EDGE DEPLOYMENT
 --------------------------------------------------
 
-Dataset Type: LLM-generated + curated
-Image Modality: Grayscale
-Labeling Method: Manual class assignment
-Purpose: Hackathon research
-License: Educational use
-Note:No proprietary or restricted industrial data was used.
+- **Target Hardware:** NXP i.MX RT Series
+- **Framework:** NXP eIQ Toolkit
+- **Model Format:** ONNX
+- **Quantization:** INT8-ready
 
 --------------------------------------------------
-SUBMISSION
+## DATASET INFORMATION
 --------------------------------------------------
 
-IESA DeepTech Hackathon 2026 – Phase 1
-Focus: Edge-AI | Semiconductor Inspection | Embedded ML
+- **Dataset Type:** LLM-generated + curated
+- **Image Modality:** Grayscale
+- **Labeling Method:** Manual class assignment
+- **Purpose:** Hackathon research
+- **License:** Educational use
+- **Note:** No proprietary or restricted industrial data was used.
 
 --------------------------------------------------
-LICENSE
+## SUBMISSION
 --------------------------------------------------
 
-Dataset: Educational use
-Code: Hackathon & academic demonstration
+**IESA DeepTech Hackathon 2026 – Phase 1**
+
+**Focus:** Edge-AI | Semiconductor Inspection | Embedded ML
+
+--------------------------------------------------
+## LICENSE
+--------------------------------------------------
+
+- **Dataset:** Educational use
+- **Code:** Hackathon & academic demonstration
+
+---
+
+## 🤝 Contributors
+
+Thanks to all contributors who have helped with this project!
+
+---
+
+**Made with ❤️ for IESA DeepTech Hackathon 2026**
