@@ -1,25 +1,22 @@
-# IESA DeepTech Hackathon 2026
-Semiconductor Wafer Defect Classification (Edge-AI)
+# IESA DeepTech Hackathon 2026: Semiconductor Wafer Defect Classification (Edge-AI)
 
-Lightweight CNN-based solution for semiconductor wafer defect classification,
-optimized for edge deployment on NXP i.MX RT series devices.
+**Lightweight CNN-based solution for semiconductor wafer defect classification, optimized for edge deployment on NXP i.MX RT series devices.**
 
---------------------------------------------------
-PROJECT SUMMARY
---------------------------------------------------
+## Project Summary
 
-Test Accuracy: 92.83%
-Validation Accuracy: 92.27%
-Classes: 8 defect types
-Dataset Size: ~4,000 images
-Input: Grayscale (64x64, resized during training)
-ONNX Model Size: 2.06 MB
-INT8 Model Size (Estimated): ~1.41 MB
+* **Test Accuracy:** 92.83%
+* **Validation Accuracy:** 92.27%
+* **Classes:** 8 defect types
+* **Dataset Size:** ~4,000 images
+* **Input:** Grayscale (64x64, resized during training)
+* **ONNX Model Size:** 2.06 MB
+* **INT8 Model Size (Estimated):** ~1.41 MB
 
---------------------------------------------------
-REPOSITORY STRUCTURE
---------------------------------------------------
+---
 
+## Repository Structure
+
+```text
 iesa/
 ├── dataset/
 │   ├── train/ (1200)
