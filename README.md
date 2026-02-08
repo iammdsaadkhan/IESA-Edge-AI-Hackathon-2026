@@ -48,7 +48,7 @@ iesa/
 ├── models/
 │   ├── wafer_defect_model.pth
 │   ├── best_model.pth
-│   └── SEMNet_Final_1_5M.onnx
+│   └── SEMNetV2_wafer_defect.onnx
 │
 ├── reports/
 │   ├── confusion_matrix.png
