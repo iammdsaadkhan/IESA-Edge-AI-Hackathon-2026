@@ -1,0 +1,20 @@
+import json
+from sklearn.metrics import precision_score, recall_score, f1_score
+
+metrics = {
+    "accuracy": round(final_accuracy * 100, 2),
+    "precision_macro": round(precision_score(all_labels, all_preds, average="macro") * 100, 2),
+    "recall_macro": round(recall_score(all_labels, all_preds, average="macro") * 100, 2),
+    "f1_macro": round(f1_score(all_labels, all_preds, average="macro") * 100, 2),
+    "num_classes": len(class_names),
+    "classes": class_names,
+    "epochs": len(train_acc_list),
+    "model_parameters": 1475912,
+    "fp32_size_mb": 5.63,
+    "int8_size_mb": 1.41
+}
+
+with open("reports/metrics.json", "w") as f:
+    json.dump(metrics, f, indent=4)
+
+print("Saved: reports/metrics.json")
