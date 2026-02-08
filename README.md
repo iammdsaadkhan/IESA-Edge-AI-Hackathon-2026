@@ -95,17 +95,14 @@ MODEL ARCHITECTURE
 
 Model Name: phase1Model.ipynb
 
-Custom edge-optimized CNN designed for real-time
-semiconductor wafer inspection.
+A custom edge-optimized convolutional neural network built for real-time semiconductor wafer inspection.
 
 Key Features:
-- 3x3 convolution blocks (32 → 384 channels)
-- Batch Normalization after every convolution
-- ReLU activation (hardware friendly)
-- MaxPooling for spatial downsampling
-- Adaptive Average Pooling
-- Fully connected classifier with Dropout (0.5)
-- INT8 quantization ready
+- Batch normalization applied after each convolution layer
+- Hardware-efficient ReLU activation functions
+- Max pooling layers for progressive spatial reduction
+- Adaptive average pooling for flexible feature aggregation
+- Designed to support INT8 quantization for efficient deployment on edge hardware
 
 --------------------------------------------------
 MODEL STATISTICS
