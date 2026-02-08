@@ -171,7 +171,7 @@ DATASET_ROOT = "/content/Dataset"  # Verify this matches your setup
 
 **Documentation:** See `README.md` for detailed explanations  
 **Issues:** Create GitHub issue with error logs  
-**Email:** 25f2100016@es.study.iitm.ac.in
+**Email:** 25f2100016@es.study.iitm.ac.in , 25f100042@es.study.iitm.ac.in , 24f3100291@es.study.iitm.ac.in
 
 ---
 
