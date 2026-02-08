@@ -7,9 +7,9 @@
 * **Test Accuracy:** 92.83%
 * **Validation Accuracy:** 92.27%
 * **Classes:** 8 defect types
-* **Dataset Size:** ~4,000 images
+* **Dataset Size:** ~1200 images
 * **Input:** Grayscale (64x64, resized during training)
-* **ONNX Model Size:** 2.06 MB
+* **ONNX Model Size:** 5.63 MB
 * **INT8 Model Size (Estimated):** ~1.41 MB
 
 ---
