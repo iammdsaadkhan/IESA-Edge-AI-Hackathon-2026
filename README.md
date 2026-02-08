@@ -13,6 +13,18 @@
 * **INT8 Model Size (Estimated):** ~1.41 MB
 
 ---
+## Dataset
+
+Due to GitHub file size limitations, the dataset is **not included** in this repository.
+
+📂 **Download Dataset (Google Drive):**  
+
+(https://drive.google.com/drive/folders/1pFaCKxIcWJXT1TRrQku-klRs3T7KODLo?usp=sharing)
+
+### Dataset Structure
+
+After downloading, place the dataset in the project root as follows:
+
 
 ## Repository Structure
 
