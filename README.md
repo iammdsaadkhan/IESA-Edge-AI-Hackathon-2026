@@ -14,7 +14,7 @@
 
 ---
 
-## 📊 Results & Visualizations
+##  Results & Visualizations
 
 ### Training Performance
 ![Training History](reports/training_history.png)
@@ -30,7 +30,7 @@
 
 Due to GitHub file size limitations, the dataset is **not included** in this repository.
 
-📂 **Download Dataset (Google Drive):** [Click here to download dataset](https://drive.google.com/drive/folders/1pFaCKxIcWJXT1TRrQku-klRs3T7KODLo?usp=sharing)
+ **Download Dataset (Google Drive):** [Click here to download dataset](https://drive.google.com/drive/folders/1pFaCKxIcWJXT1TRrQku-klRs3T7KODLo?usp=sharing)
 
 ### Dataset Structure
 
