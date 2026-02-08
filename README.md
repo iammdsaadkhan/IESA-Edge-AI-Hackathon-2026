@@ -46,8 +46,10 @@ iesa/
 │   └── README.md
 │
 ├── models/
-│   ├── wafer_defect_model.pth
 │   ├── phase1Model.ipynb
+|   ├── prepare_dataset.py
+|   ├── train_model.py
+|   ├── export_model.py
 │   └── SEMNetV2_wafer_defect.onnx
 │
 ├── reports/
@@ -56,9 +58,6 @@ iesa/
 │   ├── model_metrics_report.txt
 │   └── metrics.json
 │
-├── prepare_dataset.py
-├── train_model.py
-├── export_model.py
 └── README.md
 ```
 
