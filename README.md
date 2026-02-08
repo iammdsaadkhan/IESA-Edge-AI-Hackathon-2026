@@ -18,7 +18,7 @@
 
 ### Training Performance
 ![Training History](reports/training_history.png)
-*Training and validation accuracy/loss progression over 40 epochs*
+*Training and validation accuracy/loss progression over 30 epochs*
 
 ### Confusion Matrix
 ![Confusion Matrix](reports/confusion_matrix.png)
