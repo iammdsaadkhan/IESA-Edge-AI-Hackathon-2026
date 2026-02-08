@@ -47,7 +47,7 @@ iesa/
 │
 ├── models/
 │   ├── phase1Model.ipynb
-|   ├── prepare_dataset.py
+|   ├── dataset.py
 |   ├── train_model.py
 |   ├── export_model.py
 │   └── SEMNetV2_wafer_defect.onnx
