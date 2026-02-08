@@ -115,8 +115,8 @@ python benchmark_edge_model.py \
 
 **Expected Results:**
 - Latency: ~15ms (CPU)
-- Model Size: ~2.3 MB
-- Accuracy: ~90%
+- Model Size: ~5.6 MB
+- Accuracy: ~92%
 
 ---
 
@@ -171,7 +171,7 @@ DATASET_ROOT = "/content/Dataset"  # Verify this matches your setup
 
 **Documentation:** See `README.md` for detailed explanations  
 **Issues:** Create GitHub issue with error logs  
-**Email:** your.email@example.com
+**Email:** 25f2100016@es.study.iitm.ac.in
 
 ---
 
