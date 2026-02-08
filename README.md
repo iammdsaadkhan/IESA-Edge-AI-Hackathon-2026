@@ -49,6 +49,7 @@ iesa/
 |   ├── dataset.py
 |   ├── train_model.py
 |   ├── export_model.py
+|   ├── SEMNet_Final_1_5M_FP32.onnx
 │   └── SEMNetV2_wafer_defect.onnx
 │
 ├── reports/
