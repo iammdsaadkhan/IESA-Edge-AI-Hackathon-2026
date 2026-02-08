@@ -1,6 +1,6 @@
 # 🚀 Quick Start Guide - IESA DeepTech Hackathon 2026
 
-**Get your defect detection system running in 10 minutes!**
+**Get your defect detection system running in ~20 minutes!!!**
 
 ---
 
