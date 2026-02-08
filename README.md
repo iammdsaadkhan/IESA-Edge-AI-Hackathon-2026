@@ -47,7 +47,7 @@ iesa/
 │
 ├── models/
 │   ├── wafer_defect_model.pth
-│   ├── best_model.pth
+│   ├── phase1Model.ipynb
 │   └── SEMNetV2_wafer_defect.onnx
 │
 ├── reports/
