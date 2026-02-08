@@ -5,7 +5,7 @@
 ## Project Summary
 
 * **Test Accuracy:** 92.83%
-* **Validation Accuracy:** 92.27%
+* **Validation Accuracy:** 90.27%
 * **Classes:** 8 defect types
 * **Dataset Size:** ~1200 images
 * **Input:** Grayscale (64x64, resized during training)
