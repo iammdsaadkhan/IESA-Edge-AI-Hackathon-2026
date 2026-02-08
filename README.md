@@ -40,7 +40,7 @@ After downloading, place the dataset in the project root as follows:
 ```text
 iesa/
 ├── dataset/
-│   ├── train/ (1200)
+│   ├── train/ (600)
 │   ├── validation/ (600)
 │   ├── test/ (600)
 │   └── README.md
