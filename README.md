@@ -80,6 +80,8 @@ Other              0.9726      97.26%    0.9726     73
 Oxide              0.9485      99.23%    0.9699     130
 Pattern Collapse   0.8462      100.00%   0.9167     55
 
+![Image 1](https://drive.google.com/uc?export=view&id=1FiH_mJd0RMu0Bc85s-x3P_2sRbR-sFEm)
+
 --------------------------------------------------
 ACCURACY SUMMARY
 --------------------------------------------------
