@@ -19,8 +19,8 @@
 ```
 1. Go to: https://colab.research.google.com
 2. File → Upload Notebook
-3. Upload: IESA_QuickStart.ipynb
-4. Runtime → Change runtime type → GPU
+3. Upload: phase1Model.ipynb
+4. Runtime → Change runtime type → CPU
 ```
 
 ### Step 3: Run All Cells
