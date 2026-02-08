@@ -42,8 +42,7 @@ iesa/
 ├── dataset/
 │   ├── train/ (600)
 │   ├── validation/ (600)
-│   ├── test/ (600)
-│   └── README.md
+│   └── test/ (Will Recived in Phase 2)
 │
 ├── models/
 │   ├── phase1Model.ipynb
