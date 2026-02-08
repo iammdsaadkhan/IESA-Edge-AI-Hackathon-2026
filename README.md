@@ -87,13 +87,13 @@ ACCURACY SUMMARY
 Overall Accuracy: 92.44%
 Macro Avg F1: 0.8774
 Weighted Avg F1: 0.9018
-Total Samples: 586
+Total Samples: ~1200
 
 --------------------------------------------------
 MODEL ARCHITECTURE
 --------------------------------------------------
 
-Model Name: SEMNet_Final_1_5M
+Model Name: phase1Model.ipynb
 
 Custom edge-optimized CNN designed for real-time
 semiconductor wafer inspection.
