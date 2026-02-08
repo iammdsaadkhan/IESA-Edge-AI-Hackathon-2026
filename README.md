@@ -231,6 +231,8 @@ python export_model.py
 
 Thanks to all contributors who have helped with this project!
 
+![Contributors](reports/Contributor.jpeg)
+
 ---
 
 **Made with ❤️ for IESA DeepTech Hackathon 2026**
