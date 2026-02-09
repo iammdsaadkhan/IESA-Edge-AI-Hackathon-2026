@@ -12,6 +12,12 @@
 * **ONNX Model Size:** 5.63 MB
 * **INT8 Model Size (Estimated):** ~1.41 MB
 
+### 📄 Project Presentation
+
+**[View Phase 1 Presentation (PDF)](reports/ELITE_Phase1.pdf)**
+
+*Complete project documentation including team details, methodology, architecture, and results*
+
 ---
 
 ##  Results & Visualizations
@@ -56,7 +62,9 @@ iesa/
 │   ├── confusion_matrix.png
 │   ├── training_history.png
 │   ├── model_metrics_report.txt
-│   └── metrics.json
+│   ├── metrics.json
+│   ├── Contributor.jpeg
+│   └── ELITE_Phase1.pdf
 │
 └── README.md
 ```
